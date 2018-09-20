@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 Don't know what I'm doing
+  .container
+  .alert.alert-success(role='alert')
+    h4.alert-heading Well done!
+    p.mb-0
+      | Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
+
+  form
+  .form-group
+    label(for='exampleInputEmail1') Drop a comment here
+    input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp', placeholder='Comment')
+    small#emailHelp.form-text.text-muted This is a helper text.
+
+  button.btn.btn-danger(type='button') Don't click
