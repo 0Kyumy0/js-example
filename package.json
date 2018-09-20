@@ -9,12 +9,13 @@
     "linting": "eslint app.js"
   },
   "engines": {
-    "node": "10.8.0",
+    "node": "6.8.0",
     "npm": "6.4.1"
   },
   "dependencies": {
     "express": "^4.12.3",
     "morgan": "^1.9.1",
+    "nano": "^7.1.0",
     "pug": "^2.0.3",
     "winston": "^3.1.0"
   },
