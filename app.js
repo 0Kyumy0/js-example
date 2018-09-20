@@ -3,6 +3,7 @@ const path = require('path');
 const winston = require('winston');
 const morgan = require('morgan');
 const index = require('./routes/index');
+const details = require('./routes/details');
 
 const level = process.env.NODE_ENV === 'production' ? 'info' : 'debug';
 const logger = winston.createLogger({
@@ -26,6 +27,7 @@ app.set('view engine', 'pug');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
+app.use('/', details);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
